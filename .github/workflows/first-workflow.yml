@@ -24,4 +24,4 @@ jobs:
       - name: run-shell-commands
         run: Write-Output "Window String"
       - name: Error Step
-        run: doesnotexits
+        run: doesnotexitss
