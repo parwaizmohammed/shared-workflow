@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: echo a string
         run: echo "Hello World"
+      - name: one more string
+        run: echo 'One more message'
       - name: Multiline Command
         run: |
           node -v
