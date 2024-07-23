@@ -5,14 +5,14 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      MY_ENV_VAR1: Hello,World!!
+      MY_ENV_VAR_1: Hello,World!!
 
     steps:
       - name: Set the value of MY_ENV_VAR
-        run: echo "My_ENV_VAR2=Hello, World!!!" >> $GITHUB_ENV
+        run: echo "My_ENV_VAR_2=Hello, World!!!" >> $GITHUB_ENV
 
       - name: Print the environment variable set at Workflow
-        run: echo ${{env.My_ENV_VAR1}}
+        run: echo ${{env.My_ENV_VAR_1}}
 
-      - name: Print the environment variable set at Workflow
-        run: echo ${{env.My_ENV_VAR2}}
+      - name: Print the environment variable set at Steps
+        run: echo ${{env.My_ENV_VAR_2}}
