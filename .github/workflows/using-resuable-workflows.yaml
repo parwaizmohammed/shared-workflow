@@ -1,0 +1,12 @@
+name: Calling Resusable Workflows
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "Input Description"
+        type: string
+        default: "Ali"
+        required: false
+jobs:
+  calling-a-reusable-wf:
+    uses: parwaizmohammed/workflows/.github/workflows/reusable.yml@main
