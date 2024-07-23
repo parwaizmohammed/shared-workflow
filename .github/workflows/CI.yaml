@@ -7,6 +7,7 @@ on:
   pull_request:
     branches:
       - main
+
 jobs:
-  call-shared-workflow:
+  call-shared-workflows:
     uses: parwaizmohammed/workflows/.github/workflows/reusable.yml@main
