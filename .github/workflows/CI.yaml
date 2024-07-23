@@ -1,0 +1,12 @@
+name: CI using Shared Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  call-shared-workflow:
+    uses: parwaizmohammed/workflows/.github/workflows/reusable.yml@main
