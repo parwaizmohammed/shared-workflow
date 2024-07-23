@@ -5,11 +5,11 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      MY_ENV_VAR: Hello,World!
+      MY_ENV_VAR: Hello,World!!
 
     steps:
       - name: Set the value of MY_ENV_VAR
-        run: echo "My_ENV_VAR=Hello, World!" >> $GITHUB_ENV
+        run: echo "My_ENV_VAR=Hello, World!!!" >> $GITHUB_ENV
 
       - name: Print the environment variable
         run: echo ${{env.My_ENV_VAR}}
